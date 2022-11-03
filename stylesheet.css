@@ -1,0 +1,26 @@
+body{
+    background-color: #F9E9EC;
+}
+
+header{
+    background-color: #0EB1D2;
+    text-align: center;
+}
+
+nav{
+    background-color: #0EB1D2;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+/*Colors
+#F9E9EC : Lavendar Blush, whitish purple
+#FAC748 : Maize Crayola, yellow
+#34E4EA : Fluorescent Blue, light blue
+#0EB1D2 : Pacific Blud, dark blue
+#2B4141 : Dark Slate Gray, dark gray
+
+
+*/
