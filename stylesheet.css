@@ -1,25 +1,49 @@
 body{
-    background-color: #F9E9EC;
+    background-color: #F9E9EC0F;
 }
 
 header{
     background-color: #0EB1D2;
     text-align: center;
+    overflow: hidden;
 }
 
+/*Nav Bar*/
 nav{
     background-color: #0EB1D2;
+    margin: 0;
+    text-align: center;
+}
+nav img{
+    float: left;
+    position: relative;
+    margin: 10px 15px 15px 10px;
+    width: 50px;
+    height: 50px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    display: inline-block;
+    list-style-type: none;
+}
+nav > ul > li > a{
+    color: #2B4141 ;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    font-size: large;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
+
 /*Colors
 #F9E9EC : Lavendar Blush, whitish purple
 #FAC748 : Maize Crayola, yellow
 #34E4EA : Fluorescent Blue, light blue
-#0EB1D2 : Pacific Blud, dark blue
+#0EB1D2 : Pacific Blue, dark blue
 #2B4141 : Dark Slate Gray, dark gray
 
 
