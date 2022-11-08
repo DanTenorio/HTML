@@ -1,22 +1,43 @@
-body{
+body, html{
     background-color: #F9E9EC0F;
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    font: inherit;
+	vertical-align: baseline;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 header{
     background-color: #0EB1D2;
     text-align: center;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: block;
+    border: 0;
+	font-size: 100%;
+}
+
+h1{
+    color: #2B4141;
+    text-align: center;
+
+}
+p{
+    color: #2B4141;
 }
 
 /*Nav Bar*/
 nav{
     background-color: #0EB1D2;
-    margin: 0;
+    margin-right: 75px;
     text-align: center;
 }
 nav img{
     float: left;
-    position: relative;
     margin: 10px 15px 15px 10px;
     width: 50px;
     height: 50px;
@@ -40,7 +61,58 @@ nav > ul > li > a{
     font-size: large;
 }
 
+#summary{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#summary p{
+    text-align: left;
+    float: left;
+}
 
+#projects{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #2B4141;
+}
+
+#projects h2{
+    text-align: center;
+}
+.project{
+    border-color: #FAC748;
+    border-style: solid;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#activities{
+    color: #2B4141;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#activities h2{
+    text-align: center;
+}
+.activity{
+    border-color: #FAC748;
+    border-style: solid;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+footer{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 /*Colors
 #F9E9EC : Lavendar Blush, whitish purple
 #FAC748 : Maize Crayola, yellow
