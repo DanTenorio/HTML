@@ -9,6 +9,7 @@
         <meta name="description" content="Contact Danny Tenorio"/>
         <meta name="author" content="Juan Daniel Tenorio"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/cd9e56b2a0.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -20,20 +21,55 @@
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="activities.html">Activities</a></li>
                     <li><a href="cv.html">CV</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
         <!--Contact Form-->
-        <form target="_self" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"/>
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email"/>
-            <label for="comment">Comment</label>
-            <textarea type="text" id="comment" name="comment" rows="10" cols="10"></textarea>
-            <input type="submit" value="Submit"/>
-        </form>
+        <div class="container">
+            <form target="_self" method="post">
+
+                <div class="row">
+                    <div class="label-col">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class = input-col>
+                        <input type="text" id="name" name="name"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="label-col">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="input-col">
+                        <input type="email" id="email" name="email"/>
+                    </div>   
+                </div>
+
+
+                <div class="row">
+                    <div class="label-col">
+                        <label for="comment">Comment</label>
+                    </div> 
+                    <div class="input-col">
+                        <textarea type="text" id="comment" name="comment" rows="10" cols="10"></textarea>
+                    </div>     
+                </div>
+                
+                <div class="row">
+                    <input type="submit" value="Submit"/>
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            <div class="links">
+                <div class="link"><a href="https://www.linkedin.com/in/juan-daniel-tenorio-24b369192/"><i class="fa-brands fa-linkedin"></i></a></div>
+                <div class="link"><a href="https://github.com/DanTenorio"><i class="fa-brands fa-github"></i></a></div>
+            </div>
+            Copyright <i class="fa-regular fa-copyright"></i> 2022 <a href="index.html">Danny Tenorio</a>
+        </footer>
     </body>
 </html>
