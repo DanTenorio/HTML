@@ -36,6 +36,6 @@
     // Close connection
     mysqli_close($conn);
 
-    header('Location: ./contact.html');
+    header('Location: ../contact.html');
 
 ?>
