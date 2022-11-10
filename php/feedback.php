@@ -38,5 +38,4 @@
     
     mysqli_close($conn);
 
-    echo 'Name: ' . $name . ', Email: ' . $email . ', Comment: ' . $comment;
 ?>
