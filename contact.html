@@ -31,14 +31,14 @@
         <div class="container">
             <h1>Contact Me</h1>
             I'd love to hear what you think of my website or any other thoughts you have. Any discussion is welcome.
-            <form target="_self" method="post">
+            <form target="_self" method="post" action="php/feedback.php">
 
                 <div class="row">
                     <div class="label-col">
                         <label for="name">Name</label>
                     </div>
                     <div class = input-col>
-                        <input type="text" id="name" name="name"/>
+                        <input type="text" id="name" name="name" maxlength="30" required/>
                     </div>
                 </div>
 
@@ -47,7 +47,7 @@
                         <label for="email">Email Address</label>
                     </div>
                     <div class="input-col">
-                        <input type="email" id="email" name="email"/>
+                        <input type="email" id="email" name="email" maxlength="255" required/>
                     </div>   
                 </div>
 
@@ -57,7 +57,7 @@
                         <label for="comment">Comment</label>
                     </div> 
                     <div class="input-col">
-                        <textarea type="text" id="comment" name="comment" rows="10" cols="10"></textarea>
+                        <textarea type="text" id="comment" name="comment" rows="10" cols="10" maxlength="500" required></textarea>
                     </div>     
                 </div>
                 
