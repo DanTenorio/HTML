@@ -5,7 +5,7 @@
 
     $servername = "us-phx-web737.main-hosting.eu";
     $username = "u668543051_JDT";
-    $password = "MSin2m!!";
+
     $dbname = "u668543051_JDTMySQL";
     
     // Create connection
