@@ -1,16 +1,17 @@
-body, html{
+body,
+html {
     background-color: #F9E9EC0F;
     margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
     font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
     font-family: Arial, Helvetica, sans-serif;
 
 }
 
-header{
+header {
     background-color: #0EB1D2;
     text-align: center;
     overflow: hidden;
@@ -18,40 +19,45 @@ header{
     padding: 0;
     display: block;
     border: 0;
-	font-size: 100%;
+    font-size: 100%;
 }
 
-h1{
+h1 {
     color: #2B4141;
     text-align: center;
 
 }
-p{
+
+p {
     color: #2B4141;
 }
 
 /*Nav Bar*/
-nav{
+nav {
     background-color: #0EB1D2;
     margin-right: 75px;
     text-align: center;
 }
-nav img{
+
+nav img {
     float: left;
     margin: 10px 15px 10px 10px;
     width: 50px;
     height: 50px;
 }
+
 nav ul {
     margin: 0;
     padding: 0;
 }
-nav li{
+
+nav li {
     display: inline-block;
     list-style-type: none;
 }
-nav > ul > li > a{
-    color: #2B4141 ;
+
+nav>ul>li>a {
+    color: #2B4141;
     display: block;
     padding-top: 25px;
     padding-left: 20px;
@@ -60,36 +66,40 @@ nav > ul > li > a{
     text-decoration: none;
     font-size: large;
 }
-li a:hover{
-    background-color:#F9E9EC;
-    color:#34E4EA;
-}
-.active{
-    background-color: #2B4141;
-    color:#FAC748;
+
+li a:hover {
+    background-color: #F9E9EC;
+    color: #34E4EA;
 }
 
-#summary{
+.active {
+    background-color: #2B4141;
+    color: #FAC748;
+}
+
+#summary {
     width: 40%;
     margin-left: auto;
     margin-right: auto;
 }
-#summary p{
+
+#summary p {
     text-align: left;
     float: left;
 }
 
-#projects{
+#projects {
     width: 40%;
     margin-left: auto;
     margin-right: auto;
     color: #2B4141;
 }
 
-#projects h2{
+#projects h2 {
     text-align: center;
 }
-.project{
+
+.project {
     border-color: #FAC748;
     border-style: solid;
     margin-bottom: 10px;
@@ -97,17 +107,18 @@ li a:hover{
     padding-right: 5px;
 }
 
-#activities{
+#activities {
     color: #2B4141;
     width: 40%;
     margin-left: auto;
     margin-right: auto;
 }
 
-#activities h2{
+#activities h2 {
     text-align: center;
 }
-.activity{
+
+.activity {
     border-color: #FAC748;
     border-style: solid;
     margin-bottom: 10px;
@@ -115,7 +126,7 @@ li a:hover{
     padding-right: 5px;
 }
 
-footer{
+footer {
     width: 40%;
     margin-left: auto;
     margin-right: auto;
@@ -124,24 +135,27 @@ footer{
 
 .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
     padding: 20px;
     width: 40%;
     margin: auto;
-  }
-  
-input[type=text], textarea, input[type=email]{
+}
+
+input[type=text],
+textarea,
+input[type=email] {
     width: 100%;
     padding: 12px;
     border: 1px solid;
     border-radius: 4px;
     resize: vertical;
 }
-label{
+
+label {
     padding: 12px 12px 12px 0;
     display: inline-block;
 }
-input[type=submit]{
+
+input[type=submit] {
     background-color: #FAC748;
     color: #0EB1D2;
     padding: 12px 20px;
@@ -150,36 +164,43 @@ input[type=submit]{
     cursor: pointer;
     float: right;
 }
-input[type=submit]:hover{
+
+input[type=submit]:hover {
     background-color: #2B4141;
 }
-.label-col{
+
+.label-col {
     float: left;
     width: 25%;
     margin-top: 6px;
 }
-.input-col{
+
+.input-col {
     float: left;
     width: 70%;
     margin-top: 6px;
 }
 
-.row::after{
+.row::after {
     content: "";
     display: table;
     clear: both;
 }
 
 @media screen and (max-width: 600px) {
-    .label-col, .input-col, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
+
+    .label-col,
+    .input-col,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
     }
 }
 
-.link{
+.link {
     display: inline;
 }
+
 /*Colors
 #F9E9EC : Lavendar Blush, whitish purple
 #FAC748 : Maize Crayola, yellow
