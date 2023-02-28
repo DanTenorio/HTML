@@ -1,78 +1,89 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <title>Contact Me - Danny Tenorio</title>
-        <link rel="stylesheet" href="stylesheet.css"/>
-        <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
-        <meta charset="UTF-8"/>
-        <meta name="keywords" content="Personal, Website, Blog, Contact"/>
-        <meta name="description" content="Contact Danny Tenorio"/>
-        <meta name="author" content="Juan Daniel Tenorio"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/cd9e56b2a0.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header>
-            <!--Navigation Bar-->
-            <nav>
-                <a href="index.html"><img src="favicon/android-chrome-72x72.png" alt="JDT png"/></a>
-                <ul>
-                    <li><a href="index.html">Home </a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="activities.html">Activities</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        
 
-        <!--Contact Form-->
-        <div class="container">
-            <h1>Contact Me</h1>
-            I'd love to hear what you think of my website or any other thoughts you have. Any discussion is welcome.
-            <form target="_self" method="post" action="php/feedback.php">
+<head>
+    <title>Contact Me - Danny Tenorio</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Personal, Website, Blog, Contact" />
+    <meta name="description" content="Contact Danny Tenorio" />
+    <meta name="author" content="Juan Daniel Tenorio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cd9e56b2a0.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit(token) {
+            document.getElementById("demo-form").submit();
+        }
+    </script>
+</head>
 
-                <div class="row">
-                    <div class="label-col">
-                        <label for="name">Name</label>
-                    </div>
-                    <div class = input-col>
-                        <input type="text" id="name" name="name" maxlength="30" required/>
-                    </div>
+<body>
+    <header>
+        <!--Navigation Bar-->
+        <nav>
+            <a href="index.html"><img src="favicon/android-chrome-72x72.png" alt="JDT png" /></a>
+            <ul>
+                <li><a href="index.html">Home </a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!--Contact Form-->
+    <div class="container">
+        <h1>Contact Me</h1>
+        I'd love to hear what you think of my website or any other thoughts you have. Any discussion is welcome.
+        <form target="_self" method="post" action="php/feedback.php">
+
+            <div class="row">
+                <div class="label-col">
+                    <label for="name">Name</label>
                 </div>
-
-                <div class="row">
-                    <div class="label-col">
-                        <label for="email">Email Address</label>
-                    </div>
-                    <div class="input-col">
-                        <input type="email" id="email" name="email" maxlength="255" required/>
-                    </div>   
+                <div class=input-col>
+                    <input type="text" id="name" name="name" maxlength="30" required />
                 </div>
-
-
-                <div class="row">
-                    <div class="label-col">
-                        <label for="comment">Comment</label>
-                    </div> 
-                    <div class="input-col">
-                        <textarea type="text" id="comment" name="comment" rows="10" cols="10" maxlength="500" required></textarea>
-                    </div>     
-                </div>
-                
-                <div class="row">
-                    <input type="submit" value="Submit"/>
-                </div>
-            </form>
-        </div>
-
-        <footer>
-            <div class="links">
-                <div class="link"><a href="https://www.linkedin.com/in/juan-daniel-tenorio-24b369192/"><i class="fa-brands fa-linkedin"></i></a></div>
-                <div class="link"><a href="https://github.com/DanTenorio"><i class="fa-brands fa-github"></i></a></div>
             </div>
-            Copyright <i class="fa-regular fa-copyright"></i> 2022 <a href="index.html">Danny Tenorio</a>
-        </footer>
-    </body>
+
+            <div class="row">
+                <div class="label-col">
+                    <label for="email">Email Address</label>
+                </div>
+                <div class="input-col">
+                    <input type="email" id="email" name="email" maxlength="255" required />
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="label-col">
+                    <label for="comment">Comment</label>
+                </div>
+                <div class="input-col">
+                    <textarea type="text" id="comment" name="comment" rows="10" cols="10" maxlength="500"
+                        required></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <input type="submit" value="Submit" />
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="links">
+            <div class="link"><a href="https://www.linkedin.com/in/juan-daniel-tenorio-24b369192/"><i
+                        class="fa-brands fa-linkedin"></i></a></div>
+            <div class="link"><a href="https://github.com/DanTenorio"><i class="fa-brands fa-github"></i></a></div>
+        </div>
+        Copyright <i class="fa-regular fa-copyright"></i> 2022 <a href="index.html">Danny Tenorio</a>
+    </footer>
+</body>
+
 </html>
