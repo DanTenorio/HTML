@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Morse Code Android Application</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Personal, Website, Blog" />
+    <meta name="description" content="Personal Website for Danny Tenorio" />
+    <meta name="author" content="Juan Daniel Tenorio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cd9e56b2a0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <!--Navigation Bar-->
+        <nav>
+            <a href="index.html"><img src="favicon/android-chrome-72x72.png" alt="JDT png" /></a>
+            <ul>
+                <li><a href="index.html">Home </a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article id="main-body">
+        <h1>
+            Morse Code Android Application
+        </h1>
+        <p>
+            For my Senior Inquiry(SI) at Augustana College I created an android phone application
+            using Android Studion, Firebase, and Gradle. I was in a team of 4 members tasked with helping
+            a professor make an app. The professor was a hobbyist H.A.M. radio user and wanted to create an
+            application to train amatuer radio operators for H.A.M. radio competitions. There were many setbacks
+            and many hurdles to overcome as nobody in the team had experience with phone app development or
+            developing a large project with a team.
+        </p>
+        <p>
+            The first hurdle we had to overcome was what to use to create our phone application. There are many ways
+            to go about making a phone application and we were overwhelmed with all the choices available to use such
+            as React native, Flutter, etc... We decided to use Android Studio since it was supported by Google to make
+            Google Play Store apps, we could write our code in Java which is what we use, and most of the team members
+            had Android phones to work with. Once we started developing the app, technical issues started happening.
+        </p>
+        <p>
+            Two main technical issues arose. The first was how to deal with call-signs and the other was how to deal
+            with sounds. In H.A.M. Radio usage, call-signs have significant meaning such as country of origin and name.
+            We decided to use a database full of in use call-signs and had to decide how to store them, either in the
+            app or in a database. We decided to use a database in case we had to change call-signs. We use Google's
+            Firebase to store the call-signs. Then the other issue was how to deal with sound. H.A.M. radios uses radio
+            waves which is not compatible with digital phones so we had to find a way to deal with how to project sound
+            and create sound.Usually phone apps play a sound file such as an mp3 file. We had to create a sound file
+            that recreates an analog sound because H.A.M. radios had randomness to their sound along with other radio
+            frequencies disturbing the original.
+        </p>
+        <p>
+            We had to recreate radio waves and turn them into a digital format that the phone could use. We accomplished
+            this by creating an array of numbers that represented a radio wave at a certain frequency and amplitude.
+            Then we used an external library to convert the wave into a sound file which the phone could then play.
+            After that we had to figure out how sound waves interact with each other to see how we would have to
+            create sound files. Once all this was complete we had a finished app.
+        </p>
+        <p>
+            The app was completed and included highest scoring board along with settings that made playing easier or
+            more difficult. The code can be found on github and the app was released to the Google Play Store, but is
+            no longer maintained.
+        </p>
+        <a href="https://github.com/AugustanaCSC490Spring2020/HamRadioSimulator"><i
+                class="fa-brands fa-square-github"></i></a>
+    </article>
+
+    <footer>
+        <div class="links">
+            <div class="link"><a href="https://www.linkedin.com/in/juan-daniel-tenorio-24b369192/"><i
+                        class="fa-brands fa-linkedin"></i></a></div>
+            <div class="link"><a href="https://github.com/DanTenorio"><i class="fa-brands fa-github"></i></a></div>
+        </div>
+        Copyright <i class="fa-regular fa-copyright"></i> 2022 <a href="index.html">Danny Tenorio</a>
+    </footer>
+
+</body>
+
+</html>

@@ -74,6 +74,23 @@ li a:hover {
     color: #FAC748;
 }
 
+/*
+Main Webpage Bodies
+*/
+#main-body {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main-body>h1 {
+    text-align: center;
+}
+
+#main-body p {
+    text-indent: 50px;
+}
+
 #cv {
     width: 40%;
     margin-left: auto;
